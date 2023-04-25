@@ -1,0 +1,76 @@
+.field {
+    width: 50%;
+    position: relative;
+}
+
+@keyframes anim_field {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.field_rotate {
+    animation: anim_field 1s linear;
+}
+
+#ved {
+    background-image: url("yakubovich.png");
+    background-size: 100%;
+    width: 30%;
+    height: 45%;
+    position: absolute;
+    border-radius: 20px;
+    border: 5px solid gold;
+    background-repeat: no-repeat;
+
+}
+
+#hat1 {
+    background-image: url("hat1.png");
+    width: 28%;
+    height: 45%;
+    left: 40%;
+    bottom: 55%;
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#hat2 {
+    background-image: url("hat2.jpg");
+    width: 33%;
+    height: 45%;
+    left: 40%;
+    bottom: 62%;
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+img{
+    width: 30%;
+    margin: 1% 1%;
+    border-radius: 5px;
+}
+.gift{
+
+    width: 30%;
+    margin: 2% 1%;
+    font-size: 10px;
+}
+h2{
+    color: darkred;
+    font-family: "Arial Black", serif;
+    margin-bottom: 30px;
+}
+h4{
+    color: black;
+    font-family: "Arial Black", serif;
+    font-size: 16px;
+}
+.ved_button{
+    margin: 1% 1%;
+}
+input{
+    height: 15%;
+}

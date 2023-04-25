@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="field.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style_field.css">
+    <style>
+        #butS1 {
+        }
+    </style>
+</head>
+<body class="bg-warning">
+ <button id="new_game"  type="button" class="btn btn-outline-dark align-text-top">Новая игра
+            </button>
+<div class="container-fluid p-5">
+    <h2 class="text-md-center">ПОЛЕ ЧУДЕС</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Загадано слово:</h4>
+            <h4 id="vopros">Вопрос</h4>
+            <h2 id="slovo"></h2>
+            <input type="text">
+            <button type="button" class="btn btn-dark" id="butOK">OK</button>
+
+        </div>
+        <div class="col-md-4">
+            <button id="rotate_field" type="button" class="btn btn-outline-dark align-text-top">Вращайте барабан
+            </button>
+            <br>
+            <br>
+            <img src="field.png" alt="" class="field">
+            <br>
+            <h4 id="field">Результат вращения барабана</h4>
+            <h4 id="score">Общий счет</h4>
+            <h4 id="letter">Есть буква или нет</h4>
+            <h4 id="result">Результат</h4>
+        </div>
+        <div class="col-md-4">
+            <div id="gifts">
+                <h4>Раздаем призы!</h4>
+                <div id="price_block1">
+                    <img src="tv.jpg" alt="">
+                    <img src="sm.jpg" alt="">
+                    <img src="mp.jpg" alt="">
+                    <br>
+                    <div class="row">
+                        <button type="button" class="btn btn-outline-dark align-text-top gift" id="tv">Телевизор - 1500
+                            очков
+                        </button>
+                        <button type="button" class="btn btn-outline-dark align-text-top gift" id="sm">Стиральная машина
+                            - 1000
+                            очков
+                        </button>
+                        <button type="button" class="btn btn-outline-dark align-text-top gift" id="mp">СВЧ-печь - 500
+                            очков
+                        </button>
+                        <h4 id="price">Приз</h4>
+                    </div>
+                </div>
+                <div id="tea">
+                    <h4 id="tea_text">Утешительный приз</h4>
+                    <img src="tea.jpg" alt="">
+                </div>
+                <div id="car">
+                    <h4 id="car_text">Суперприз</h4>
+                    <img src="car.jpg" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid p5">
+    <h2 class="text-md-center">Подарки</h2>
+    <div class="row">
+        <div class="col-md-4" id="ved">
+            <div id="hat1">
+            </div>
+            <div id="hat2"></div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h4>Выбери подарок ведущему</h4>
+            <button id="butS1" type="button" class="btn btn-outline-dark align-text-top ved_button">Сюрприз 1 - 500 очков
+            </button>
+            <button id="butS2" type="button" class="btn btn-outline-dark align-text-top ved_button">Сюрприз 2 - 500 очков
+            </button>
+            <h4 id="surVed">Хватает ли баллов</h4>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
